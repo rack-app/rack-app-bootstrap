@@ -1,0 +1,25 @@
+language: ruby
+
+before_install: gem install bundler
+script: rspec spec
+
+rvm:
+
+  - 1.8
+  - 1.9
+  - 2.0
+  - 2.1
+  - jruby-18mode
+  - jruby-19mode
+
+  - ruby-head
+  - jruby-head
+
+env:
+  global:
+    - VERBOSE=true
+    - TIMEOUT=1
+
+branches:
+  only:
+    - master
