@@ -2,7 +2,6 @@ require 'rack/app'
 class Rack::App::Bootstrap < Rack::App
 
   require 'rack/app/bootstrap/version'
-  require 'rack/app/bootstrap/assets'
 
   ASSET_VERSIONS_FOLDER = ::File.join(::File.dirname(__FILE__), 'bootstrap', 'assets')
 
