@@ -1,15 +1,15 @@
 PATH
   remote: .
   specs:
-    rack-app-bootstrap (0.1.0)
-      rack-app (>= 1.2.2)
+    rack-app-bootstrap (0.2.0)
+      rack-app (>= 1.4.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.2.5)
     rack (1.6.4)
-    rack-app (1.2.2)
+    rack-app (1.4.0)
       rack
     rake (10.5.0)
     rspec (3.4.0)
