@@ -15,7 +15,7 @@ class Rack::App::Bootstrap < Rack::App
     asset_versions_paths = Dir.glob(::File.join(ASSET_VERSIONS_FOLDER, '*'))
     asset_versions_paths.find { |path| ::File.basename(path) == version } || raise("unknown bootstrap version: #{version}")
 
-    serve_files_from("assets/#{version}")
+    mount_directory("assets/#{version}")
   end
 
   def self.latest_version
