@@ -19,9 +19,9 @@ describe Rack::App::Bootstrap do
 
       end
 
-      it {expect(get(:url => '/assets/css/bootstrap.min.css').body).to be_a Rack::File  }
+      it { expect(get(:url => '/assets/css/bootstrap.min.css').status).to eq 200 }
 
-      it {expect(get(:url => '/assets/js/bootstrap.min.js').body).to be_a Rack::File  }
+      it { expect(get(:url => '/assets/js/bootstrap.min.js').status).to eq 200 }
 
     end
 
