@@ -5,7 +5,7 @@ class Rack::App::Bootstrap < Rack::App
 
   ASSET_VERSIONS_FOLDER = ::File.join(::File.dirname(__FILE__), 'bootstrap', 'assets')
 
-  on_mounted do |klass, options|
+  on_mounted do |options|
     assets_by_version(options[:version])
   end
 
